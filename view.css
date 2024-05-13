@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+header{
+    background-color: #6c4438;
+    color:#fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+.logo{
+    font-size:32px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+.logo a{/*my bookstore*/
+    color:#fff;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+nav ul li{
+    margin-left: 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;/*remove line under home books ...*/
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.4s ease;
+   
+}
+
+nav ul li a:hover{
+    color:#666;
+}
+
+.search{
+    position: relative;
+}
+
+.search input{
+    padding:10px;
+    border:none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color:#666;
+
+}
+
+.search button{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:10px;
+    border:none;
+    border-radius: 20px;
+    background-color:#c1c1ae;
+    color:#444;
+    font-weight: bold;
+    
+}
+
+.hero{
+    background-color:#b08968;
+    padding:70px 60px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.hero h1{
+    font-size:48px;
+    color:#fff;
+}
+
+.hero p{
+    font-size: 24px;
+    color:#fff;
+    margin-bottom: 30px;
+  
+}
+
+.main-content{
+    background-color: #f5f5dc;
+    padding:40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px  10px rgba(0,0,0,0.2);
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:40px;
+    margin-top: 40px;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.book img{
+    max-width:100% ;
+    margin-bottom:10px;
+}
+
+.book:hover img {
+    transform: scale(0.9); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+} 
+.book h3{
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.book p {
+    margin-top: 2px;
+    color: #666;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color:#b08968;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    
+}
+
+.btn:hover{
+    background-color: #555;
+}
+
+footer{
+    background-color: #262626;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.price p{
+    line-height: 1px; 
+    color:green;
+    
+}

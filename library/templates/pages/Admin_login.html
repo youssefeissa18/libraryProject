@@ -1,0 +1,33 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Library - Admin Login</title>
+  <link rel="stylesheet" href="{% static 'css/CssCode.css' %}">
+</head>
+<body>
+  <h1>E-Book</h1>
+  <h2>Admin Login</h2>
+  <section class="main">
+    <img src="{% static 'images/lib10.jpg' %}" id="star">
+  </section>
+  
+  <form id="loginForm" action="Admin.html" method="get">
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br />
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" required /><br />
+    <input type="submit" value="Login" />
+  </form>
+  <p>New Admin? <a href="Admin_SignUp.html">Sign up here</a></p>
+  <footer>
+    <p class="footer">&copy; 2024 Online Bookstore</p>
+  </footer>
+
+  <script src="js/validationLogin.js"> </script>
+  
+</body> 
+</html>

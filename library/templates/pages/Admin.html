@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin</title>
+<link rel="stylesheet" href="css/Admin.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <a href="">E-Book</a>
+
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Home_page.html">Home</a></li>
+            <li><a href="view_available_books_admin.html">Books</a></li>
+        </ul>
+    </nav>
+    <div class='search' id="searchbox">
+        <div id="search-container">
+            <label for="search-input">Search</label>
+            <input type="search" id="search-input" placeholder="Title, Author, Category">
+            <div id="search-results"></div>
+        </div>
+    </div>
+</header>
+
+<section class="main">
+  <img src="imgs/photo-1481627834876-b7833e8f5570.avif" id="star">
+</section>
+
+<form id="navigation-form">
+  <h2>Admin</h2>
+  <input  type="button" id="add-book" name="navigation" value="Add New Book" onclick="window.location.href='Add_Book.html'">
+  <input  type="button" id="view-books" name="navigation" value="View Available Books" onclick="window.location.href='view_available_books_admin.html'"><br><br>
+  <input  type="button" id="delete-book" name="navigation" value="Delete a Book" onclick="window.location.href='Edit_Book.html'">
+  <input class="Edite" type="button" id="edit-book" name="navigation" value="Edit a Book's Details" onclick="window.location.href='Edit_Book.html'"><br>
+</form>
+
+<footer>
+  <p>&copy; 2024 Online Bookstore</p>
+</footer>
+</body>
+</html>

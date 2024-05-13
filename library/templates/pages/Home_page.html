@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Online_library_website">
+    <title>Online_library_website</title>
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">E-Book</a>
+
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="view_available_books_user.html">Books</a></li>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Login</button>
+                        <div class="dropdown-content">
+                            <a href="{% url 'adminlogin' %}">Admin </a>
+                            <!-- <a href="User_login.html">User </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Sign Up</button>
+                        <div class="dropdown-content">
+                            <a href="{% url 'adminsignup' %}">Admin </a>
+                            <!-- <a href="User_SignUp.html">User </a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+        </ul>
+    </header>
+    <section class="main">
+        
+        <img src="{% static 'images/lib01.jpg' %}" id="lib01">
+        <!-- <h2 class="Ebook">E-book</h2> -->
+    </section>
+    <footer class="FooterSignup">
+        <p>&copy; 2024 Online Bookstore</p>
+    </footer>
+
+</body>
+</html>

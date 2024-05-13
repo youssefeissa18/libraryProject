@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Books</title>
+    <link rel="stylesheet" href="css/EditAndAdd.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="">E-Book</a>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home_page.html">Home</a></li>
+                <li><a href="view_available_books_admin.html">Books</a></li>
+
+
+            </ul>
+        </nav>
+        <div class='search' id="searchbox">
+            <div id="search-container">
+                <label for="search-input">Search</label>
+                <input type="search" id="search-input" placeholder="Title, Author, Category">
+                <div id="search-results"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Add New Books</h2>
+        <form id="addBook" action="Add Book" method="post">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id"><br>
+
+            <label for="name">Book Name</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="author name">Author</label>
+            <input type="text" id="author" name="author"><br>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a Category</option>
+                <option value="fiction">Fiction Books</option>
+                <option value="non-fiction">Non-fiction</option>
+                <option value="educational">Educational</option>
+                <option value="romantic">Romantasy and Paranormal Romance</option>
+                <option value="comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Historical">Historical Romance</option>
+            </select>
+            <br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <br>
+
+            <input type="submit" onclick="addBook()" value="Add Book">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Bookstore</p>
+    </footer>
+
+    <script src="js/addBook.js"></script>
+</body>
+
+</html>
